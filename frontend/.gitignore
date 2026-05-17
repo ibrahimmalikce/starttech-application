@@ -1,0 +1,12 @@
+# Node
+node_modules/
+frontend/build/
+
+# Go
+backend/bin/
+
+# OS
+.DS_Store
+
+# Env
+.env
