@@ -29,7 +29,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	defer logger.Sync()
+	defer func() { _ = logger.Sync() }()
 
 	cfg := config.Load()
 	logger.Info("starting StartTech backend",
